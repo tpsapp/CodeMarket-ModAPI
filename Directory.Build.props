@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Deterministic>true</Deterministic>
+    <TreatWarningsAsErrors Condition="'$(Configuration)' == 'Release'">true</TreatWarningsAsErrors>
+    <!-- Resolve Code Market installation directory dynamically without hardcoded user paths -->
+    <GameDir Condition="'$(GameDir)' == ''">$(GAME_DIR)</GameDir>
+  </PropertyGroup>
+</Project>

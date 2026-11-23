@@ -1,0 +1,21 @@
+{
+  "id": "sappsworld.sample-datapack",
+  "name": "Sample Balance Data Pack",
+  "version": "1.0.0",
+  "apiVersion": "1.0",
+  "author": "Sappsworld Programming",
+  "description": "Zero-code JSON data pack example demonstrating product price and upgrade cost overrides.",
+  "type": "datapack",
+  "overrides": {
+    "products": {
+      "Tomato": {
+        "sellPrice": 12
+      }
+    },
+    "upgrades": {
+      "racks.tomato": {
+        "costMultiplier": 0.9
+      }
+    }
+  }
+}

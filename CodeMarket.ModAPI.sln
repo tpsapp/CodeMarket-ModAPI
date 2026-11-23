@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMarket.ModAPI.Core", "src\CodeMarket.ModAPI.Core\CodeMarket.ModAPI.Core.csproj", "{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMarket.ModAPI.Core.Tests", "tests\CodeMarket.ModAPI.Core.Tests\CodeMarket.ModAPI.Core.Tests.csproj", "{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMarket.ModAPI.Unity", "src\CodeMarket.ModAPI.Unity\CodeMarket.ModAPI.Unity.csproj", "{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMarket.Mods.QoL", "src\Mods\CodeMarket.Mods.QoL\CodeMarket.Mods.QoL.csproj", "{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0004}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94F2E1A-5B37-4F2C-8C4E-1F7A2B9C0004}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

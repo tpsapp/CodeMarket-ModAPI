@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>CodeMarket.ModAPI.Unity</AssemblyName>
+    <RootNamespace>CodeMarket.ModAPI.Unity</RootNamespace>
+    <Version>1.0.0</Version>
+    <ManagedDir>$(GameDir)/Code Market_Data/Managed</ManagedDir>
+    <BepInExCoreDir>$(GameDir)/BepInEx/core</BepInExCoreDir>
+  </PropertyGroup>
+
+  <Target Name="ValidateGameDir" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(GameDir)' == '' Or !Exists('$(ManagedDir)/JavaMarket.dll')"
+           Text="GAME_DIR must point to a valid Code Market installation containing Code Market_Data/Managed/JavaMarket.dll (got '$(GameDir)')." />
+    <Error Condition="!Exists('$(BepInExCoreDir)/BepInEx.dll')"
+           Text="BepInEx 5 (x64 Mono) must be installed under '$(GameDir)/BepInEx/core/'." />
+  </Target>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CodeMarket.ModAPI.Core\CodeMarket.ModAPI.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCoreDir)/BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCoreDir)/0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedDir)/UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedDir)/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(ManagedDir)/UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(ManagedDir)/UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(ManagedDir)/UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(ManagedDir)/UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(ManagedDir)/UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="JavaMarket">
+      <HintPath>$(ManagedDir)/JavaMarket.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="JavaMarket.Java">
+      <HintPath>$(ManagedDir)/JavaMarket.Java.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="JavaMarket.CSharp">
+      <HintPath>$(ManagedDir)/JavaMarket.CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
