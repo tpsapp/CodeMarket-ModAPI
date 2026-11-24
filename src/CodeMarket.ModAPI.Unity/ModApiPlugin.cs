@@ -88,6 +88,14 @@ public sealed class ModApiPlugin : BaseUnityPlugin
 
         ModMenuOverlay overlay = gameObject.AddComponent<ModMenuOverlay>();
         SaveSidecarPatches.SidecarWarningRaised += overlay.NotifySidecarWarning;
+
+        logger.Info("[ModAPI] Language restriction guard active: built-in languages only.");
+    }
+
+    private void Start()
+    {
+        // Audit Harmony patches once all BepInEx plugins have completed Awake().
+        LanguageRestrictionGuard.AuditAndEnforce(ModApiRuntime.Logger);
     }
 
     private static void DiscoverAndLoadDataPacks(IModLogger logger)

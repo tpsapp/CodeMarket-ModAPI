@@ -6,6 +6,7 @@ using CodeMarket.ModAPI.Core.DataPacks;
 using CodeMarket.ModAPI.Core.Json;
 using CodeMarket.ModAPI.Core.Lifecycle;
 using CodeMarket.ModAPI.Core.Sidecars;
+using CodeMarket.ModAPI.Unity.Safety;
 using UnityEngine;
 
 namespace CodeMarket.ModAPI.Unity;
@@ -150,7 +151,11 @@ public static class ModApiRuntime
         bool activated = Lifecycle.ExecuteModPhase(
             record.Id,
             ModState.Active,
-            () => _onScriptRegistryChanged?.Invoke(),
+            () =>
+            {
+                _onScriptRegistryChanged?.Invoke();
+                LanguageRestrictionGuard.AuditAndEnforce(Logger);
+            },
             rollback: () => RollbackMod(record.Id));
 
         if (activated)

@@ -1,6 +1,6 @@
 {
   "name": "CodeMarket_ModAPI",
-  "version_number": "1.0.0",
+  "version_number": "1.0.1",
   "website_url": "https://github.com/tpsapp/CodeMarket-ModAPI",
   "description": "Non-destructive modding framework, zero-code JSON data pack loader, and reference QoL mod for Code Market (Windows & Steam Proton).",
   "dependencies": [

@@ -90,6 +90,12 @@ public sealed class DataPackLoader
 
         foreach (KeyValuePair<string, JsonValue> section in overrides.AsObject())
         {
+            if (LanguagePolicy.IsForbiddenDataPackSection(section.Key))
+            {
+                throw new InvalidOperationException(
+                    $"{LanguagePolicy.ViolationMessage} (forbidden section '{section.Key}').");
+            }
+
             switch (section.Key)
             {
                 case "products":

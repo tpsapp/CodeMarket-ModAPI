@@ -3,6 +3,6 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>CodeMarket.ModAPI.Core</AssemblyName>
     <RootNamespace>CodeMarket.ModAPI.Core</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 </Project>

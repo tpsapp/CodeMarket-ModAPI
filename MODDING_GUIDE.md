@@ -6,6 +6,8 @@ You can create two kinds of mods:
 1. **Zero-Code JSON Data Packs (`mod.json`)** — No compiler required. Override product prices, upgrade costs, store rates, and procedural 3D material colors by dropping a single JSON file into `BepInEx/plugins/`.
 2. **C# Plugin Mods (`.dll`)** — Full BepInEx plugins implementing `ICodeMarketMod` to add custom **Java & C#** robot/store scripting methods, configurable `.cfg` settings, dynamic economy/visual hooks, and per-save sidecar state.
 
+> **Policy Notice (Coding Languages & DLC):** Per the [**Code Market**](https://store.steampowered.com/app/5451260/Code_Market/) creators' guidelines, mods may **not** add new in-game programming languages or patch/bypass official Steam language DLC systems (`SteamDlc`, `CodeLanguage`, or official base/DLC language VM assemblies for Java, C#, Python, JavaScript/TypeScript, C++, PHP, Rust, and Go). `CodeMarket.ModAPI` enforces this restriction at runtime by stripping offending patches and quarantining non-compliant mods or data packs.
+
 ---
 
 ## 1. Creating a Zero-Code JSON Data Pack

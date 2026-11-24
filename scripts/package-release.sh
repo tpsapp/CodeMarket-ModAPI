@@ -4,7 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)"
 REPO_ROOT="$(cd -- "${SCRIPT_DIR}/.." &>/dev/null && pwd -P)"
 
-VERSION="1.0.0"
+VERSION="1.0.1"
 DRY_RUN=0
 VERBOSE=0
 TARGET_GAME_DIR="${GAME_DIR:-${HOME}/.steam/steam/steamapps/common/Code Market}"

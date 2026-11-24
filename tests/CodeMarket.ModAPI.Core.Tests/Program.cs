@@ -30,6 +30,7 @@ internal static class Program
         LifecycleTests.Register();
         DataPackTests.Register();
         SidecarTests.Register();
+        LanguagePolicyTests.Register();
 
         return TestHarness.Run(suiteFilter);
     }

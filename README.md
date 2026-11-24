@@ -9,6 +9,7 @@ Non-destructive modding framework, zero-code JSON data pack loader, and first-pa
 * **Zero-Code JSON Data Packs (`mod.json`):** Drop a `mod.json` folder into `BepInEx/plugins/` to tweak prices, upgrade costs, store rates, and material colors without writing C#.
 * **Per-Save Sidecar Persistence:** Mod state saves atomically to `<save>.moddata.json` alongside vanilla `save.json` (removing mods leaves vanilla saves untouched).
 * **Fault Isolation & Mod Menu (`F8`):** Failing mods are individually quarantined (*Continue-with-Warning*) with an in-game banner and scrollable `F8` Mod Menu.
+* **Creator-Aligned Language Policy:** Per the [**Code Market**](https://store.steampowered.com/app/5451260/Code_Market/) creators' guidelines, adding new in-game coding languages or bypassing official language DLCs (base: Java & C#; official DLCs: Python, JavaScript/TypeScript, C++, PHP, Rust, Go) is restricted and enforced at runtime.
 
 ---
 

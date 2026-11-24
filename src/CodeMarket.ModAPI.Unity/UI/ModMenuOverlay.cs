@@ -124,6 +124,7 @@ internal sealed class ModMenuOverlay : MonoBehaviour
         GUILayout.Label(
             $"Steam Achievements: {(ModApiRuntime.DisableAchievementsWhenModded ? "Suppressed (config)" : "Enabled (default)")}",
             _bodyStyle);
+        GUILayout.Label("Language Policy: Official base & owned DLC languages only (enforced)", _bodyStyle);
         GUILayout.EndVertical();
 
         GUILayout.Space(8f);
